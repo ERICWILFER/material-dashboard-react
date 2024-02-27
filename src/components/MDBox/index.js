@@ -21,15 +21,15 @@ import PropTypes from "prop-types";
 // Custom styles for MDBox
 import MDBoxRoot from "components/MDBox/MDBoxRoot";
 
-const MDBox = forwardRef(
-  ({ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow, ...rest }, ref) => (
-    <MDBoxRoot
-      {...rest}
-      ref={ref}
-      ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow }}
-    />
-  )
-);
+const MDBox = forwardRef(({ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow, ...rest }, ref) => (
+  <MDBoxRoot
+    {...rest}
+    ref={ref}
+    ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow }}
+  />
+));
+
+MDBox.displayName = "MDBox";
 
 // Setting default values for the props of MDBox
 MDBox.defaultProps = {

@@ -25,10 +25,7 @@ import MDTypographyRoot from "components/MDTypography/MDTypographyRoot";
 import { useMaterialUIController } from "context";
 
 const MDTypography = forwardRef(
-  (
-    { color, fontWeight, textTransform, verticalAlign, textGradient, opacity, children, ...rest },
-    ref
-  ) => {
+  ({ color, fontWeight, textTransform, verticalAlign, textGradient, opacity, children, ...rest }, ref) => {
     const [controller] = useMaterialUIController();
     const { darkMode } = controller;
 
@@ -51,6 +48,8 @@ const MDTypography = forwardRef(
     );
   }
 );
+
+MDTypography.displayName = "MDTypography";
 
 // Setting default values for the props of MDTypography
 MDTypography.defaultProps = {

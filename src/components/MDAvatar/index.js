@@ -32,6 +32,8 @@ MDAvatar.defaultProps = {
   shadow: "none",
 };
 
+MDAvatar.displayName = "MDAvatar";
+
 // Typechecking props for the MDAvatar
 MDAvatar.propTypes = {
   bgColor: PropTypes.oneOf([
